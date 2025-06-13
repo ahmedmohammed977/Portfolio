@@ -427,3 +427,77 @@ footer {
     font-size: 1.6rem;
   }
 }
+/* Ensure sections stretch full width on all devices */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all sections responsive */
+.section, .hero, .skills-section, .stats-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Images scale well */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flex wrap for responsiveness */
+.row, .container, .hero-content, .stats-container {
+  flex-wrap: wrap;
+}
+
+/* Responsive text */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* Responsive navbar menu */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
